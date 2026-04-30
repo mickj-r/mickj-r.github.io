@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="witdth=device-width, initial-scale=1.0">
+        <title>Minha Apresentação</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <header class="header">
+            <button id="toggleTema">🌙</button>
+            <div class="nav">
+                <h3 class="logo">Mick</h3>
+                <nav>
+                    <a href="#sobre"></a>
+                    <a href="#projetos"></a>
+                    <a href="#contato"></a>
+                </nav>
+            </div>
+                
+        </header>
+
+        <main class="container">
+
+            <section class="card">
+                <h1>Olá, eu sou Miqueias</h1>
+                <p>
+                    Sou estudante de Engenharia de Software e estou começando minha jornada no desenvolvimento front-end. Atualmente estou aprendendo HTML, CSS e em breve vou avançar para Javascript.
+                </p>
+                
+                <div class="botoes">
+                    <a href="#projetos" class="botao">Ver projetos</a>
+                    <a href="#contato" class="botao botao-secundario">Contato</a>
+                </div>
+                
+            </section>
+
+            <section class="card" id="sobre">
+                <h2>Sobre mim</h2>
+                <p>
+                    Gosto de aprender criando projetos práticos. Meu objetivo é evoluir aos poucos, construir um portfólio e me tornar um desenvolvedor front-end.
+                </p>
+            </section>
+            <section class="card">
+                <h2>Habilidades</h2>
+                
+                <div class="habilidade">
+                    <span>HTML</span>
+                    <div class="barra">
+                        <div class="progresso html"></div>
+                    </div>
+                </div>
+
+                <div class="habilidade">
+                    <span>CSS</span>
+                    <div class="barra">
+                        <div class="progresso css"></div>
+                    </div>
+                </div>
+                
+                <div class="habilidade">
+                    <span>Javascript</span>
+                    <div class="barra">
+                        <div class="progresso js"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card" id="projetos">
+                <h2>Projetos</h2>
+
+                <div class="grid-projetos">
+                    <div class="projeto-card">
+                        <h3>Galáxia Interativa</h3>
+                        <p>Projeto visual feito com HTML, CSS e JavaScript</p>
+                        <a href="#" class="link-projeto">Ver projeto</a>
+                    </div>
+                </div>
+
+                <div class="projeto-card">
+                    <h3>Site pessoal</h3>
+                    <p>Página de apresentação com estilo dark minimalista.</p>
+                    <a href="#" class="link-projeto">Ver projeto</a>
+                </div>
+            </section>
+
+            <section class="card" id="contato">
+                <h2>Contato</h2>
+                <p>Instagram: @mickj._r</p>
+                <p>Email: jesusmiqueias862@gmail.com</p>
+            </section>
+
+        </main>
+
+        <script src="script.js"></script>
+    </body>
+</html>
