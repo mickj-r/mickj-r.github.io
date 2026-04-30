@@ -1,1 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galáxia Interativa V5</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="universe" id="universe">
+    <div class="space-bg"></div>
+    <div class="aurora"></div>
+    <div class="overlay" id="overlay"></div>
 
+    <section class="intro-screen" id="introScreen">
+      <div class="intro-content">
+        <p class="intro-kicker">Projeto Interativo</p>
+        <h1>Explore uma galáxia criada com HTML, CSS e JavaScript</h1>
+        <p class="intro-text">
+          Clique no botão abaixo para entrar em uma experiência espacial com
+          planetas interativos, zoom cinematográfico e descrições animadas.
+        </p>
+        <button class="intro-btn" id="startBtn">Explorar galáxia</button>
+      </div>
+    </section>
+
+    <div class="nebula nebula-1 layer layer-far"></div>
+    <div class="nebula nebula-2 layer layer-far"></div>
+    <div class="nebula nebula-3 layer layer-far"></div>
+
+    <div class="stars stars-back layer layer-far" id="starsBack"></div>
+    <div class="stars stars-front layer layer-mid" id="starsFront"></div>
+    <div class="particles" id="particles"></div>
+
+    <div class="comet" id="comet">
+      <span class="comet-tail"></span>
+      <span class="comet-head"></span>
+    </div>
+
+    <div class="scene-camera" id="sceneCamera">
+      <div class="galaxy-core"></div>
+      <div class="orbit orbit-1"></div>
+      <div class="orbit orbit-2"></div>
+      <div class="orbit orbit-3"></div>
+      <div class="orbit orbit-4"></div>
+
+      <section class="solar-system" id="solarSystem">
+        <button
+          class="planet planet-1 rotating"
+          data-planet="ignis"
+          data-name="Ignis"
+          data-type="Planeta vulcânico"
+          data-description="Ignis é um mundo rochoso intenso, com fissuras incandescentes, relevo escuro e calor extremo. A superfície mistura regiões de magma exposto e áreas minerais resfriadas, criando um contraste forte e dramático."
+          data-fact="Seu visual usa brilho térmico, crostas escuras e rachaduras luminosas para sugerir atividade geológica constante."
+        >
+          <span class="planet-glow"></span>
+          <span class="planet-atmosphere"></span>
+          <span class="planet-texture"></span>
+          <span class="orbit-spark spark-1"></span>
+          <span class="orbit-spark spark-2"></span>
+          <span class="planet-label">Ignis</span>
+        </button>
+
+        <button
+          class="planet planet-2 rotating"
+          data-planet="nereon"
+          data-name="Nereon"
+          data-type="Planeta oceânico"
+          data-description="Nereon é um planeta coberto por oceanos profundos, nuvens finas e reflexos azulados. Sua aparência mistura água, atmosfera úmida e luz suave, criando um visual limpo e brilhante visto do espaço."
+          data-fact="As faixas claras e os brilhos especulares ajudam a passar a sensação de um mundo aquático iluminado por uma estrela próxima."
+        >
+          <span class="planet-glow"></span>
+          <span class="planet-atmosphere"></span>
+          <span class="planet-texture"></span>
+          <span class="moon moon-1"></span>
+          <span class="orbit-spark spark-1"></span>
+          <span class="orbit-spark spark-2"></span>
+          <span class="planet-label">Nereon</span>
+        </button>
+
+        <button
+          class="planet planet-3 rotating"
+          data-planet="cryon"
+          data-name="Cryon"
+          data-type="Planeta congelado"
+          data-description="Cryon é um planeta gelado com calotas extensas, superfícies cristalinas e nuvens frias. Sua luz azul-clara e branca transmite a sensação de um mundo silencioso, rígido e dominado pelo gelo."
+          data-fact="As camadas translúcidas e marcas claras simulam regiões congeladas, neve compactada e reflexos frios da atmosfera."
+        >
+          <span class="planet-glow"></span>
+          <span class="planet-atmosphere"></span>
+          <span class="planet-texture"></span>
+          <span class="orbit-spark spark-1"></span>
+          <span class="orbit-spark spark-2"></span>
+          <span class="planet-label">Cryon</span>
+        </button>
+
+        <button
+          class="planet planet-4 rotating"
+          data-planet="zephyria"
+          data-name="Zephyria"
+          data-type="Gigante gasoso"
+          data-description="Zephyria é um gigante gasoso com bandas atmosféricas profundas, névoa violeta e anéis finos. Seu volume aparente é reforçado por brilho difuso, camadas suaves e uma atmosfera densa."
+          data-fact="O anel iluminado e as faixas de nuvens foram pensados para lembrar gigantes gasosos retratados em imagens astronômicas e arte espacial."
+        >
+          <span class="planet-glow"></span>
+          <span class="planet-atmosphere"></span>
+          <span class="planet-texture"></span>
+          <span class="planet-ring"></span>
+          <span class="moon moon-2"></span>
+          <span class="orbit-spark spark-1"></span>
+          <span class="orbit-spark spark-2"></span>
+          <span class="planet-label">Zephyria</span>
+        </button>
+      </section>
+    </div>
+
+    <aside class="info-panel" id="infoPanel">
+      <button class="close-btn" id="closeBtn">Voltar</button>
+      <div class="text-reveal">
+        <p class="info-kicker reveal-item" id="planetType">Tipo</p>
+        <h2 class="reveal-item" id="planetName">Nome do planeta</h2>
+        <p class="info-description reveal-item" id="planetDescription">Descrição do planeta.</p>
+        <p class="info-fact reveal-item" id="planetFact">Curiosidade.</p>
+      </div>
+    </aside>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
