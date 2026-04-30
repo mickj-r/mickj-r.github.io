@@ -7,7 +7,7 @@ Este é meu portfólio pessoal desenvolvido com HTML, CSS e JavaScript.
 ### 🌌 Projeto Galáxia Interativa
 Projeto visual feito com HTML, CSS e JavaScript, com animações, estrelas, planetas e interação com o usuário.
 
-Acesse: `https://seuusuario.github.io/projetos/galaxia/`
+Acesse: `https://mickj-r.github.io/projetos/galaxia/`
 
 ## 🛠️ Tecnologias usadas
 
