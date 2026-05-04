@@ -1,5 +1,7 @@
 const botao = document.getElementById("toggleTema")
 
-botao.addEventListener("click", () => {
-    document.body.classList.toggle("light-mode");
-})
+if(botao) {
+    botao.addEventListener("click", () => {
+        document.body.classList.toggle("light-mode");
+    });
+}

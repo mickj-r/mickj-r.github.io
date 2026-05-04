@@ -5,25 +5,27 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Minha Apresentação</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     </head>
     <body>
 
         <header class="header">
-            <button id="toggleTema">🌙</button>
             <div class="nav">
                 <h3 class="logo">Mick</h3>
+           
                 <nav>
                     <a href="#sobre">Sobre</a>
                     <a href="#projetos">Projetos</a>
                     <a href="#contato">Contato</a>
                 </nav>
+           
+                <button id="toggleTema">🌙</button>
             </div>
-                
         </header>
 
         <main class="container">
 
-            <section class="card">
+            <section class="card apresentacao">
                 <h1>Olá, eu sou Miqueias</h1>
                 <p>
                     Sou estudante de Engenharia de Software e estou começando minha jornada no desenvolvimento front-end. Atualmente estou aprendendo HTML, CSS e em breve vou avançar para Javascript.
@@ -60,7 +62,7 @@
                 </div>
                 
                 <div class="habilidade">
-                    <span>Javascript</span>
+                    <span>JavaScript</span>
                     <div class="barra">
                         <div class="progresso js"></div>
                     </div>
@@ -87,7 +89,12 @@
 
             <section class="card" id="contato">
                 <h2>Contato</h2>
-                <p>Instagram: @mickj._r</p>
+                <div class="contao-item">
+                    <a href="https://instagram.com/mickj._r" target="_blank" class="icone">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                </div>
                 <p>Email: jesusmiqueias862@gmail.com</p>
             </section>
 
