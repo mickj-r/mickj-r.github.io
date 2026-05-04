@@ -9,16 +9,17 @@ Projeto visual feito com HTML, CSS e JavaScript, com animações, estrelas, plan
 
 Acesse: `https://mickj-r.github.io/projetos/galaxia/`
 
+### 🧑‍💻 Site Pessoal
+Página de apresentação com estilo dark minimalista
+
+Acesse: `https://mickj-r.github.io/`
+
 ## 🛠️ Tecnologias usadas
 
 - HTML5
 - CSS3
 - JavaScript
 - GitHub Pages
-
-## 📌 Objetivo
-
-Este repositório foi criado para praticar desenvolvimento front-end e reunir meus projetos em um só lugar.
 
 ## 📱 Status
 
