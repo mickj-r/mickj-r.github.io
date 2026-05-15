@@ -290,26 +290,34 @@ html{
     color: #fff;
 }
 
-.contato-item {
-    margin-top: 10px;
+.contato-grid {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
 }
 
-.contato-item a {
-    display: inline-flex;
+.contato-item {
+    display: flex;
     align-items: center;
     gap: 10px;
-    color: #c7d3b3;
+    background-color: #111412;
+    border: 1px solid #2a2f2b;
+    padding: 12px 18px;
+    border-radius: 10px;
     text-decoration: none;
-    font-weight: 500;
-    transition: 0.25s;
-}
-
-.contato-item a:hover {
-    color: #6f873f;
+    color: #c7d3b3;
+    transition: 0.25s ease;
 }
 
 .contato-item i {
-    font-size: 20px;
+    font-size: 18px;
+}
+
+.contato-item:hover {
+    transform: translateY(-3px);
+    border-radius: #556b2f;
+    color: #6f873f;
 }
 
 .icone {
