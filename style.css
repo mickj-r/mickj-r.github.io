@@ -372,6 +372,16 @@ html{
     .botao {
         margin-bottom: 10px; 
     }
+
+    .hero-conteudo{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .avatar {
+        width: 180px;
+        height: 180px;
+    }
 }
 
 #toggleTema {
@@ -445,4 +455,36 @@ html{
 .footer p {
     color: #666;
     font-size: 14px;
+}
+
+.hero-conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-texto {
+    flex: 1;
+}
+
+.avatar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 2px solid #556b2f;
+    background-color: rgba(85, 107, 47, 0.1);
+    padding: 6px;
+    transition: 0.3s ease;
+}
+
+.avatar:hover{
+    transform: translateY(-4px) scale(1.02);
+    border-color: #6f873f;
 }
