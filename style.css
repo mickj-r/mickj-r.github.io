@@ -259,6 +259,30 @@ html{
     color: #556b2f;
 }
 
+.light-mode .projeto-card,
+.light-mode .contato-item {
+    background-color: #ffffff;
+    border: 1px solid #d8d8d8;
+}
+
+.light-mode .projeto-card p {
+    color: #555;
+}
+
+.light-mode .projeto-card:hover,
+.light-mode .contato-item:hover {
+    background-color: #f7f7f5;
+}
+
+.light-mode .link-projeto,
+.light-mode .contato-item {
+    color: #3f553f;
+}
+
+.light-mode .contato-item i {
+    color: #556b2f;
+}
+
 .light-mode p,
 .light-mode .habilidade span {
     color: #555;
@@ -336,12 +360,13 @@ html{
 
 @media (max-width: 700px) {
     body {
-        padding: 20px;
+        padding: 12px 20px;
     }
 
     .nav {
         flex-direction: column;
-        gap: 12px
+        gap: 12px;
+        align-items: center;
     }
 
     nav a {
@@ -354,7 +379,7 @@ html{
     }
     
     .apresentacao h1{
-        font-size: 34px;
+        font-size: 32px;
         letter-spacing: -1px;
     }
     h1{
@@ -376,11 +401,21 @@ html{
     .hero-conteudo{
         flex-direction: column-reverse;
         text-align: center;
+        gap: 24px;
     }
 
     .avatar {
-        width: 180px;
-        height: 180px;
+        width: 160px;
+        height: 160px;
+    }
+
+    .contato-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .contato-item {
+        justify-content: center;
     }
 }
 
