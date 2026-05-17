@@ -1,11 +1,14 @@
 body{
     background-color: #0f1110;
-    font-family: Arial, sans-serif;
+    font-family: "Inter", sans-serif;
     margin: 0;
     padding: 40px;
     color: #e8e8e8;
+    -webkit-font-smoothing: antialiased;
 }
-
+* {
+    box-sizing: border-box;
+}
 .container {
     max-width: 780px;
     margin: 0 auto;
@@ -19,15 +22,35 @@ body{
     border-radius: 14px;
     transition: 0.25s ease;
 
-    /* animação */
+
+}
+
+.reveal {
     opacity: 0;
-    transform: translateY(20px);
-    animation: aparecer 0.6s ease forwards;
+    transform: translateY(24px);
+    transition: 0.6s ease;
+}
+
+.reveal.ativo {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .card:hover {
     transform: translateY(-3px);
     border-color: #556b2f;
+}
+
+.tag {
+display: inline-block;
+    color: #c7d3b3;
+    background-color: rgba(85, 107, 47, 0.15);
+    border: 1px solid #556b2f;
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 18px;
 }
 
 .apresentacao {
@@ -54,6 +77,17 @@ p {
     line-height: 1.7;
 }
 
+.apresentacao h1 {
+    font-size: 52px;
+    line-height: 1.05;
+    margin-bottom: 18px;
+    letter-spacing: -2px;
+    max-width: 700px;
+}
+
+.apresentacao p {
+    max-width: 620px;
+}
 .botoes {
     margin-top: 24px;
 }
@@ -125,12 +159,10 @@ p {
 
 .git {
     width: 80%;
-    background-color: brown;
 }
 
 .github {
-    width: 80%;
-    background-color: gray;
+    width: 85%;
 }
 
 .header {
@@ -165,17 +197,6 @@ nav a:hover {
     color: #556b2f
 }
 
-.card:nth-child(1) {animation-delay: 0.1s; }
-.card:nth-child(2) {animation-delay: 0.2s; }
-.card:nth-child(3) {animation-delay: 0.3s; }
-.card:nth-child(4) {animation-delay: 0.4s; }
-
-@keyframes aparecer {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }   
-}
 
 .botao {
     position: relative;
@@ -207,10 +228,78 @@ html{
 }
 
 .light-mode .card{
-    background-color: white;
+    background-color: #ffffff;
+    border-color: #d8d8d8;
     color: #222;
 }
 
+.light-mode .header {
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.light-mode .logo {
+    color: #2b2b2b;
+}
+
+.light-mode nav a {
+    color: #555;
+}
+
+.light-mode nav a:hover {
+    color: #556b2f;
+}
+
+.light-mode h1{
+    color: #1f1f1f;
+}
+
+.light-mode h2, 
+.light-mode .projeto-card h3 {
+    color: #556b2f;
+}
+
+.light-mode p,
+.light-mode .habilidade span {
+    color: #555;
+}
+
+.light-mode .tag {
+    color: #556b2f;
+    background-color: rgba(85, 107, 47, 0.12);
+    border-color: #556b2f;
+}
+
+.light-mode .barra {
+    background-color: #e1e1e1;
+}
+
+.light-mode .progresso {
+    background-color: #556b2f;
+}
+
+.light-mode .projeto-card,
+.light-mode .contato-item {
+    color: #556b2f;
+}
+
+.light-mode .botao-secundario {
+    color: #556b2f;
+    background-color: #c7d3b3;
+}
+
+.light-mode .footer{
+    border-top: 1px solid #d8d8d8;
+}
+
+.light-mode .footer p{
+    color: #777
+}
+
+.light-mode #toggleTema {
+    border-color: #d8d8d8;
+    color: #556b2f;
+}
 .grid-projetos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -263,7 +352,11 @@ html{
     .card {
         padding: 24px;
     }
-
+    
+    .apresentacao h1{
+        font-size: 34px;
+        letter-spacing: -1px;
+    }
     h1{
         font-size: 30px;
     }
@@ -339,4 +432,17 @@ html{
 .icone:hover {
     color: #556b2f;
     transform: scale(1.1);
+}
+
+.footer {
+    max-width: 780px;
+    margin: 40px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid #2a2f2b;
+    text-align: center;
+}
+
+.footer p {
+    color: #666;
+    font-size: 14px;
 }
