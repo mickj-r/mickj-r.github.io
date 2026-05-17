@@ -112,15 +112,25 @@ p {
 }
 
 .html {
-    width: 70%;
+    width: 75%;
 }
 
 .css {
-    width: 50%;
+    width: 60%;
 }
 
 .js {
-    width: 15%;
+    width: 20%;
+}
+
+.git {
+    width: 80%;
+    background-color: brown;
+}
+
+.github {
+    width: 80%;
+    background-color: gray;
 }
 
 .header {
